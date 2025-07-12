@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/khaled-portfolio/static/css/main.686b6ef0.css",
+    "main.js": "/khaled-portfolio/static/js/main.19145c76.js",
+    "static/js/453.3d17b53f.chunk.js": "/khaled-portfolio/static/js/453.3d17b53f.chunk.js",
+    "index.html": "/khaled-portfolio/index.html",
+    "main.686b6ef0.css.map": "/khaled-portfolio/static/css/main.686b6ef0.css.map",
+    "main.19145c76.js.map": "/khaled-portfolio/static/js/main.19145c76.js.map",
+    "453.3d17b53f.chunk.js.map": "/khaled-portfolio/static/js/453.3d17b53f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.686b6ef0.css",
+    "static/js/main.19145c76.js"
+  ]
+}
