@@ -65,51 +65,53 @@ export default function Portfolio() {
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(1, 1fr)',
-            gap: '1rem',
-            backgroundColor: '#fca53a',
-            padding: '1rem',
-            borderRadius: '0.5rem'
+            gap: '1.5rem',
+            maxWidth: '800px',
+            margin: '0 auto'
           }}>
-            <Card className="p-4">
-              <h3 style={{
-                fontSize: '1.5rem',
-                fontWeight: 600,
-                lineHeight: '1.25',
-                letterSpacing: '-0.025em',
-                color: '#ffffff',
-                margin: 0
-              }}>Nova Hotel Management System</h3>
-              <p style={{
-                fontSize: '0.875rem',
-                color: '#ffffff',
-                margin: 0
-              }}>
-                Full-Stack website using MongoDB, Express.js, React.js, and Node.js
-              </p>
+            <Card>
               <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '0.5rem',
-                color: '#ffffff',
-                padding: '0.5rem',
-                width: '100%'
+                padding: '1.25rem 1.5rem 0.75rem',
+                borderBottom: '1px solid #374151'
               }}>
-                <Button asChild size="sm" textAlign="center" variant="default" style={{
-                  fontSize: '1rem',
-                  padding: '0.5rem 1rem'
+                <h3 style={{
+                  fontSize: '1.25rem',
+                  fontWeight: 600,
+                  color: '#fca53a',
+                  margin: 0
+                }}>Nova Hotel Management System</h3>
+              </div>
+              <div style={{
+                padding: '1rem 1.5rem 1.5rem'
+              }}>
+                <p style={{
+                  margin: '0.5rem 0 0 0',
+                  lineHeight: '1.5',
+                  fontSize: '0.875rem',
+                  color: '#d1d5db'
+                }}>Full-Stack website using MongoDB, Express.js, React.js, and Node.js</p>
+                <div style={{
+                  padding: '0.75rem 1.5rem 0',
+                  borderTop: '1px solid #374151',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  marginTop: '1rem'
                 }}>
-                  <a href="https://github.com/KhaledMeow/nova-hotel/tree/Full-Website" target="_blank" rel="noopener noreferrer" style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                    display: 'inline-block',
-                    width: '100%',
-                    height: '100%',
-                    padding: '0.25rem 0.5rem',
-                    fontSize: '1rem'
-                  }}>
-                    GitHub
-                  </a>
-                </Button>
+                  <Button asChild variant="default">
+                    <a href="https://github.com/KhaledMeow/nova-hotel/tree/Full-Website" target="_blank" rel="noopener noreferrer" style={{
+                      color: 'white',
+                      textDecoration: 'none',
+                      display: 'flex',
+                      fontWeight: 'bold',
+                      width: '100%',
+                      height: '90%',
+                      padding: '0.25rem 0.25rem',
+                      fontSize: '1rem'
+                    }}>
+                      View on GitHub
+                    </a>
+                  </Button>
+                </div>
               </div>
             </Card>
             {/* Add more projects here */}

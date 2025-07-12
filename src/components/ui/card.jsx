@@ -1,60 +1,45 @@
 import React from "react";
 
 const cardStyle = {
-  backgroundColor: 'rgba(31, 41, 55, 0.8)',
-  backdropFilter: 'blur(8px)',
-  borderRadius: '0.75rem',
-  border: '1px solid rgba(255, 255, 255, 0.08)',
-  boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+  backgroundColor: '#1f2937',
+  borderRadius: '0.5rem',
+  border: '1px solid #374151',
   overflow: 'hidden',
   width: '100%',
   color: '#ffffff',
-  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-  marginBottom: '2rem',
-  transform: 'translateY(0)',
-  '&:hover': {
-    transform: 'translateY(-4px)',
-    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1)'
-  },
+  marginBottom: '1.5rem',
   '&:last-child': {
     marginBottom: 0
   }
 };
 
 const cardHeaderStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '0.75rem',
-  padding: '1.75rem 2rem 1.25rem',
-  background: 'linear-gradient(to right, rgba(252, 165, 58, 0.1), transparent)'
+  padding: '1.25rem 1.5rem 0.75rem',
+  borderBottom: '1px solid #374151'
 };
 
 const cardDescriptionStyle = {
-  fontSize: '0.9375rem',
-  color: '#e5e7eb',
+  fontSize: '0.875rem',
+  color: '#d1d5db',
   margin: 0,
-  lineHeight: '1.6',
-  opacity: 0.9
+  lineHeight: '1.5'
 };
 
 const cardContentStyle = {
-  padding: '1.5rem 2rem',
-  color: '#e5e7eb',
+  padding: '1rem 1.5rem 1.5rem',
   '& p': {
-    margin: '0.75rem 0 0 0',
-    lineHeight: '1.7',
-    fontSize: '0.9375rem',
-    color: '#d1d5db',
-    opacity: 0.9
+    margin: '0.5rem 0 0 0',
+    lineHeight: '1.5',
+    fontSize: '0.875rem',
+    color: '#d1d5db'
   }
 };
 
 const cardFooterStyle = {
+  padding: '0.75rem 1.5rem',
+  borderTop: '1px solid #374151',
   display: 'flex',
-  alignItems: 'center',
-  padding: '0 2rem 1.75rem',
-  marginTop: 'auto',
-  borderTop: '1px solid rgba(255, 255, 255, 0.05)'
+  justifyContent: 'center'
 };
 
 export function Card({ style, ...props }) {
