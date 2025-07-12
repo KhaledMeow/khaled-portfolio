@@ -140,7 +140,7 @@ export default function Portfolio() {
             <li>GitHub: <a style={{
               color: '#ffffff',
               textDecoration: 'underline'
-            }} href="https://github.com/KhaledMeow" target="_blank">github.com/KhaledMeow</a></li>
+            }} href="https://github.com/KhaledMeow" target="_blank" rel="noopener noreferrer">github.com/KhaledMeow</a></li>
           </ul>
         </section>
       </main>

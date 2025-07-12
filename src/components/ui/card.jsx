@@ -29,26 +29,6 @@ const cardHeaderStyle = {
   background: 'linear-gradient(to right, rgba(252, 165, 58, 0.1), transparent)'
 };
 
-const cardTitleStyle = {
-  fontSize: '1.375rem',
-  fontWeight: 600,
-  lineHeight: '1.3',
-  letterSpacing: '-0.01em',
-  margin: 0,
-  color: '#fca53a',
-  position: 'relative',
-  display: 'inline-block',
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    bottom: '-4px',
-    left: 0,
-    width: '40px',
-    height: '2px',
-    backgroundColor: 'rgba(252, 165, 58, 0.5)'
-  }
-};
-
 const cardDescriptionStyle = {
   fontSize: '0.9375rem',
   color: '#e5e7eb',
@@ -83,10 +63,6 @@ export function Card({ style, ...props }) {
 
 export function CardHeader({ style, ...props }) {
   return <div style={{ ...cardHeaderStyle, ...style }} {...props} />;
-}
-
-export function CardTitle({ style, ...props }) {
-  return <h3 style={{ ...cardTitleStyle, ...style }} {...props} />;
 }
 
 export function CardDescription({ style, ...props }) {
