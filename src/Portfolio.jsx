@@ -29,7 +29,7 @@ export default function Portfolio() {
         </p><br />
         <div className="mt-4 flex gap-4">
           <Button asChild variant="default">
-            <a href="/Khaled-Waleed-Resume.pdf" download style={{
+            <a href={`${process.env.PUBLIC_URL}/Khaled-Waleed-Resume.pdf`} download="Khaled-Waleed-Resume.pdf" style={{
               color: 'white',
               textDecoration: 'none',
               display: 'inline-block',
