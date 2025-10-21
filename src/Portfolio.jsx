@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "./components/ui/card";
 import { Button } from "./components/ui/button";
+import projects from "./lib/projects";
 
 export default function Portfolio() {
   return (
@@ -69,52 +70,53 @@ export default function Portfolio() {
             maxWidth: '800px',
             margin: '0 auto'
           }}>
-            <Card>
-              <div style={{
-                padding: '1.25rem 1.5rem 0.75rem',
-                borderBottom: '1px solid #374151'
-              }}>
-                <h3 style={{
-                  fontSize: '1.25rem',
-                  fontWeight: 600,
-                  color: '#fca53a',
-                  margin: 0
-                }}>Nova Hotel Management System</h3>
-              </div>
-              <div style={{
-                padding: '1rem 1.5rem 1.5rem'
-              }}>
-                <p style={{
-                  margin: '0.5rem 0 0 0',
-                  lineHeight: '1.5',
-                  fontSize: '0.875rem',
-                  color: '#d1d5db'
-                }}>Full-Stack website using MongoDB, Express.js, React.js, and Node.js</p>
+            {projects.map((project, idx) => (
+              <Card key={idx}>
                 <div style={{
-                  padding: '0.75rem 1.5rem 0',
-                  borderTop: '1px solid #374151',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  marginTop: '1rem'
+                  padding: '1.25rem 1.5rem 0.75rem',
+                  borderBottom: '1px solid #374151'
                 }}>
-                  <Button asChild variant="default">
-                    <a href="https://github.com/KhaledMeow/nova-hotel/tree/Full-Website" target="_blank" rel="noopener noreferrer" style={{
-                      color: 'white',
-                      textDecoration: 'none',
-                      display: 'flex',
-                      fontWeight: 'bold',
-                      width: '100%',
-                      height: '90%',
-                      padding: '0.25rem 0.25rem',
-                      fontSize: '1rem'
-                    }}>
-                      View on GitHub
-                    </a>
-                  </Button>
+                  <h3 style={{
+                    fontSize: '1.25rem',
+                    fontWeight: 600,
+                    color: '#fca53a',
+                    margin: 0
+                  }}>{project.title}</h3>
                 </div>
-              </div>
-            </Card>
-            {/* Add more projects here */}
+                <div style={{
+                  padding: '1rem 1.5rem 1.5rem'
+                }}>
+                  <p style={{
+                    margin: '0.5rem 0 0 0',
+                    lineHeight: '1.5',
+                    fontSize: '0.875rem',
+                    color: '#d1d5db'
+                  }}>{project.description}</p>
+                  <div style={{
+                    padding: '0.75rem 1.5rem 0',
+                    borderTop: '1px solid #374151',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginTop: '1rem'
+                  }}>
+                    <Button asChild variant="default">
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" style={{
+                        color: 'white',
+                        textDecoration: 'none',
+                        display: 'flex',
+                        fontWeight: 'bold',
+                        width: '100%',
+                        height: '90%',
+                        padding: '0.25rem 0.25rem',
+                        fontSize: '1rem'
+                      }}>
+                        View on GitHub
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </section>
 
@@ -139,6 +141,10 @@ export default function Portfolio() {
           }}>
             <li>Email: khaled.waleed.10802@gmail.com</li>
             <li>Phone: +20 1068339047</li>
+            <li>Linkedin: <a style={{
+              color: '#ffffff',
+              textDecoration: 'underline'
+            }} href="https://www.linkedin.com/in/khaled-waleed-k10802/" target="_blank" rel="noopener noreferrer">linkedin.com/in/khaled-waleed-10802</a></li>
             <li>GitHub: <a style={{
               color: '#ffffff',
               textDecoration: 'underline'
