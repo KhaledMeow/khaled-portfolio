@@ -26,7 +26,7 @@ export default function Portfolio() {
           color: '#e5e7eb',
           margin: 0
         }}>
-          Front-End Web Developer | React.js | WordPress & SEO
+          Front-End Developer | React.js | WordPress Website Management
         </p><br />
         <div className="mt-4 flex gap-4">
           <Button asChild variant="default">
